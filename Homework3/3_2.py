@@ -1,7 +1,6 @@
 from random import randint
 
-p = 2189284635404723
-
+"""Find the primitive elements of modulo P"""
 def find_alpha(p):
     q = (p) // 2
     for alpha in range(100):
@@ -10,7 +9,7 @@ def find_alpha(p):
             if pow(alpha, q, p) != 1:
                 print(alpha)
 
-
+"""Choose a random a"""
 def find_a(p):
     a = randint(0, p - 1)
     print(a)
@@ -22,7 +21,6 @@ def main():
     find_alpha(p) #88
     print("Private key a:")
     find_a(p) #685680634326777
-
 
 
 main()
