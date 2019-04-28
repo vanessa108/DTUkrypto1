@@ -35,8 +35,6 @@ def main():
     print("The value for d1 is " + str(d1))
     print("The value for d2 is " + str(d2))
 
-
-
     
 
     
